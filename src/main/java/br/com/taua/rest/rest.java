@@ -8,7 +8,7 @@ public class rest {
     public static void main(String[] args) {
         RestTemplate restTemplate = new RestTemplate();
         String fooResourceUrl
-                = "https://taua-cms.omnilogic.com.br/features";
+                = "https://taua-cms.omnilogic.com.br/hotels";
         ResponseEntity<String> response
                 = restTemplate.getForEntity(fooResourceUrl + "/6", String.class);
         System.out.println(response);
