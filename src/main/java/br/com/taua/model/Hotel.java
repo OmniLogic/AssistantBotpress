@@ -1,9 +1,11 @@
 package br.com.taua.model;
 
 import br.com.taua.dto.Feature;
+import lombok.Data;
 
 import java.util.List;
 
+@Data
 public class Hotel {
     private Integer id;
     private Integer promotion;
@@ -24,7 +26,4 @@ public class Hotel {
     private String route;
     private String roomAmenities;
     private List<Feature> features;
-
-
-
 }
